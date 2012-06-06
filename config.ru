@@ -1,5 +1,5 @@
 use Rack::Static, 
-  :urls => ["/stylesheets", "/images"],
+  :urls => ["/stylesheets", "/images","/" => "index.html","/references" => "references.html"],
   :root => "public"
 
 run lambda { |env|
@@ -12,4 +12,3 @@ run lambda { |env|
     File.open('public/index.html', File::RDONLY)
   ]
 }
-run lambda { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}
