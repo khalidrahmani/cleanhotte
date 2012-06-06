@@ -1,9 +1,9 @@
 use Rack::Static, 
   :urls => ["/stylesheets", "/images"],
   :root => "public"
-use Rack::Rewrite do
-  rewrite '/', 'public/index.html'
-end
+use Rack::Rewrite 
+  rewrite '/', 'index.html'
+
 run lambda { |env|
   [
     200, 
