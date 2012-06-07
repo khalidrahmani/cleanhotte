@@ -12,3 +12,4 @@ run lambda { |env|
     File.open('public/index.html', File::RDONLY)
   ]
 }
+run lambda{ |env| [ 404, { 'Content-Type' => 'text/html' }, ['404 - page not found'] ] }
