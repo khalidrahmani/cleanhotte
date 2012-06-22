@@ -12,8 +12,8 @@
 /*******************************************************************************************************************
 *  BASE                                                                                                            
 *******************************************************************************************************************/
-html {background: #37363b url('../img/noise.png');}
-body {color: #71777d;font: normal 13px Arial, Tahoma, Verdana;background: url('../img/background-x.png') repeat-x;}
+html {background: #37363b url('../images/noise.png');}
+body {color: #71777d;font: normal 13px Arial, Tahoma, Verdana;background: url('../images/background-x.png') repeat-x;}
 p {line-height: 1.7em;margin-bottom: 15px}
 address {font-style: normal;padding-bottom: 15px;}
 
@@ -22,7 +22,7 @@ address {font-style: normal;padding-bottom: 15px;}
 *******************************************************************************************************************/
 a, a:link, a:focus {color: #cb1829;outline: 0;text-decoration: none} /* color */
 a:hover {color: #000;text-decoration: underline}
-a.more {padding-right: 15px;color: #000;background: url('../img/arrow.png') no-repeat 100% 50%}
+a.more {padding-right: 15px;color: #000;background: url('../images/arrow.png') no-repeat 100% 50%}
 
 /*******************************************************************************************************************
 *  H1 - H4                                                                                                         
@@ -33,7 +33,7 @@ h1 span {color: #e1aa02}
 h2 {font-size: 1.75em;color: #5f5f61;text-shadow: 1px 1px 1px #fff;}
 h3 {font-size: 0.9em;color: #000;text-shadow: 1px 1px 1px #fff;margin-bottom: 8px}
 h4 {font-size: 1.0em;}
-.separate {padding-bottom: 10px;margin-bottom: 20px;background: url('../img/double-border.png') repeat-x bottom}
+.separate {padding-bottom: 10px;margin-bottom: 20px;background: url('../images/double-border.png') repeat-x bottom}
 
 /*******************************************************************************************************************
 *  HEADER                                                                                                          
@@ -50,7 +50,7 @@ h4 {font-size: 1.0em;}
 #header nav li.active a strong, #header nav li.active a span,
 #header nav li a:hover strong, #header nav li a:hover span {cursor: pointer;color: #000 !important} 
 #intro {color: #fff;height: 255px;position: relative;padding: 50px 550px 10px 0;position: relative}
-#intro #macbook {position: absolute;bottom: -34px;right: 0;width: 550px;height: 309px;background: url('../img/macbook.png') no-repeat}
+#intro #macbook {position: absolute;bottom: -34px;right: 0;width: 550px;height: 309px;background: url('../images/macbook.png') no-repeat}
 #intro #macbook img {position: relative;top: 20px;left:89px}
 #intro h2 {font-size: 1.2em;text-shadow: 0 0 0;color: #afadae}
 #intro p {color: #dddddd;margin-bottom: 20px}
@@ -64,16 +64,16 @@ h4 {font-size: 1.0em;}
 *******************************************************************************************************************/
 #container {background: #eeeff1;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;padding: 20px 0 50px}
 #content .withIcon {padding-left: 65px;}
-#content .icon1 {background: url('../img/icon1.png') no-repeat}
-#content .icon2 {background: url('../img/icon2.png') no-repeat}
-#content .icon3 {background: url('../img/icon3.png') no-repeat}
+#content .icon1 {background: url('../images/icon1.png') no-repeat}
+#content .icon2 {background: url('../images/icon2.png') no-repeat}
+#content .icon3 {background: url('../images/icon3.png') no-repeat}
 
 
 /*******************************************************************************************************************
 *  FOOTER                                                                                                          
 *******************************************************************************************************************/
 #twitterBar {background: #fff;padding: 15px 0;}
-#twitterBar .icon {position: absolute;top: -79px;left: -20px;display: block;width: 112px;height: 72px;background: url('../img/twitter.png') no-repeat}
+#twitterBar .icon {position: absolute;top: -79px;left: -20px;display: block;width: 112px;height: 72px;background: url('../images/twitter.png') no-repeat}
 #twitterBar p {margin: 0}
 #footer {padding: 40px 0;color: #fff;font-size: 0.9em;}
 #footer h3 {color: #fff;text-shadow: 0 0 0;margin-bottom: 20px;font-size: 1.4em}
@@ -82,18 +82,18 @@ h4 {font-size: 1.0em;}
 #footer p .date {color: #fff}
 #footer .followUs a {display: block;float: left;width: 27px;height: 28px;background-repeat: no-repeat;background-position: 0 0;text-indent: -9999px;margin-right: 5px}
 #footer .followUs a:hover {background-position: 0 -1px}
-#footer .followUs a.facebook {background-image: url('../img/icon-facebook.png');}
-#footer .followUs a.twitter {background-image: url('../img/icon-twitter.png');}
-#footer .followUs a.rss {background-image: url('../img/icon-rss.png');}
-#footer .followUs a.linkedin {background-image: url('../img/icon-linkedin.png');}
-#footer .followUs a.vimeo {background-image: url('../img/icon-vimeo.png');}
-#footer .followUs a.digg {background-image: url('../img/icon-digg.png');}
+#footer .followUs a.facebook {background-image: url('../images/icon-facebook.png');}
+#footer .followUs a.twitter {background-image: url('../images/icon-twitter.png');}
+#footer .followUs a.rss {background-image: url('../images/icon-rss.png');}
+#footer .followUs a.linkedin {background-image: url('../images/icon-linkedin.png');}
+#footer .followUs a.vimeo {background-image: url('../images/icon-vimeo.png');}
+#footer .followUs a.digg {background-image: url('../images/icon-digg.png');}
 #footer .followUs a.delicious {}
 #footer a#footerLogo {font-size: 2.0em;font-weight: bold;display: block;color: #fff;font-family: "Lato", Arial;margin-bottom: 16px;}
 #footer a#footerLogo span {color: #ccc} /* color */
 #footer a#footerLogo:hover {text-decoration: none;color: #ccc}
 #footer input.text {background: #232323;border: 1px solid #454547;padding: 10px 5px;border-radius: 4px;width: 210px;color: #e0e0e0;font-style: italic;margin-bottom: 10px}
-#footer input.submit {width: 108px;height: 31px;background: url('../img/submit-subscribe.png') no-repeat;border: 0;font-size: 1.0em;font-weight: bold;color: #660100;text-shadow: 1px 1px 1px #fb3752;font-family: Arial;cursor: pointer}
+#footer input.submit {width: 108px;height: 31px;background: url('../images/submit-subscribe.png') no-repeat;border: 0;font-size: 1.0em;font-weight: bold;color: #660100;text-shadow: 1px 1px 1px #fb3752;font-family: Arial;cursor: pointer}
 #footer input.submit:hover {color: #000}
 
 /*******************************************************************************************************************
@@ -101,8 +101,8 @@ h4 {font-size: 1.0em;}
 *******************************************************************************************************************/
 .wrap {margin: 0 auto;position: relative;width: 940px}
 .mask {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-a.button {display: block;float: left;background: url('../img/button-left.png') no-repeat;height: 42px;text-decoration: none;}
-a.button span {cursor: pointer;position: relative;left: 20px;padding: 0 30px 0 10px;display: block;float: left;background: url('../img/button-right.png') no-repeat 100% 0;height: 42px;line-height: 43px;overflow: hidden;font-size: 1.0em;font-weight: bold;color: #660100;text-shadow: 1px 1px 1px #fb3752;text-decoration: none} /* shadow and text color */
+a.button {display: block;float: left;background: url('../images/button-left.png') no-repeat;height: 42px;text-decoration: none;}
+a.button span {cursor: pointer;position: relative;left: 20px;padding: 0 30px 0 10px;display: block;float: left;background: url('../images/button-right.png') no-repeat 100% 0;height: 42px;line-height: 43px;overflow: hidden;font-size: 1.0em;font-weight: bold;color: #660100;text-shadow: 1px 1px 1px #fb3752;text-decoration: none} /* shadow and text color */
 a.button:hover span {color: #000}
 .gallery .photo {margin-left: 20px}
 .gallery .photo:first-child {margin-left: 0}
