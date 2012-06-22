@@ -1,36 +1,136 @@
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-  <title>heroku-static-site -- basic HTML+CSS+JS website on Heroku</title>
+<title>Asterisk</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/main.css" media="screen,projection">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-
+<header>
+  <div class="wrap">
+    <div id="header"> <a id="logo" href="#">Asterisk<span>*</span></a>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="#"><strong>Home</strong> <span>Lorem ipsum</span></a></li>
+          <li><a href="#"><strong>About</strong> <span>Whe we are</span></a></li>
+          <li><a href="#"><strong>Work</strong> <span>What we do</span></a></li>
+          <li><a href="#"><strong>Blog</strong> <span>Lorem ipsum</span></a></li>
+          <li><a href="#"><strong>Contact</strong> <span>Get in touch</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <div id="intro">
+      <h1>Hi, we are Asterisk!</h1>
+      <h2>Creative agency</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <a href="#" class="button"><span>MORE ABOUT US</span></a>
+      <div id="macbook"> <img src="tmp/screen.png" alt=""></div>
+    </div>
+    <hr>
+    <div id="subIntro">
+      <div class="floatLeft">
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h2>
+        <p class="large">Dolore magna aliquam erat volutpat.</p>
+      </div>
+      <a href="#" class="button floatRight"><span>CLICK THIS LINK TO READ MORE</span></a> </div>
+  </div>
+</header>
+<hr>
 <div id="container">
-  <div id="header">
-    <h1><a href="/">heroku-static-site</a></h1>
-
-    <div id="navigation">
-      <ul>
-        <li><a href="/"> index </a></li>
-        <li><a href="/references.html"> references </a></li>
-      </ul>
+  <div id="content" class="wrap">
+    <div class="cols marginBottom30 clearFix">
+      <div class="col1-3">
+        <h2 class="separate">Lorem ipsum dolor</h2>
+        <div class="content withIcon icon1">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        </div>
+      </div>
+      <div class="col1-3">
+        <h2 class="separate">Lorem ipsum dolor</h2>
+        <div class="content withIcon icon2">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        </div>
+      </div>
+      <div class="col1-3">
+        <h2 class="separate">Lorem ipsum dolor</h2>
+        <div class="content withIcon icon3">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        </div>
+      </div>
     </div>
-  </div>
-
-
-  <div id="main">
-
-    <div id="description">
-      <h2>What's the idea?</h2>
-      <p>Index</p>
+    <hr>
+    <h2 class="separate">Lorem ipsum dolor</h2>
+    <div class="marginBottom30 clearFix">
+      <div class="col1-4">
+        <h3>Post title goes here</h3>
+        <small class="date">by admin on Feb 3, 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        <a href="#" class="more">View details</a> </div>
+      <div class="col3-4">
+        <p class="gallery clearFix"> <a class="photo" href="#"><img src="tmp/image1.png" alt=""></a> <a class="photo" href="#"><img src="tmp/image2.png" alt=""></a> <a class="photo" href="#"><img src="tmp/image3.png" alt=""></a> </p>
+      </div>
     </div>
-  </div>
-
-  <div id="footer">
-    &copy; 2012 No Rights Reserved.
-
+    <hr>
+    <h2 class="separate">Recent blog posts</h2>
+    <div class="marginBottom30 clearFix">
+      <div class="col1-4">
+        <h3>Post title goes here</h3>
+        <small class="date">by admin on Feb 3, 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+      </div>
+      <div class="col1-4">
+        <h3>Post title goes here</h3>
+        <small class="date">by admin on Feb 3, 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+      </div>
+      <div class="col1-4">
+        <h3>Post title goes here</h3>
+        <small class="date">by admin on Feb 3, 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+      </div>
+      <div class="col1-4">
+        <h3>Post title goes here</h3>
+        <small class="date">by admin on Feb 3, 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+      </div>
+    </div>
+    <p><a href="#" class="more">View blog</a></p>
   </div>
 </div>
-
-
+<hr>
+<div id="twitterBar">
+  <div class="wrap"> <span class="icon"></span>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="#">http://www.domain.com</a> <small>2 hours ago</small></p>
+  </div>
+</div>
+<footer>
+  <div id="footer">
+    <div class="wrap clearFix">
+      <div class="col1-4"> <a href="#" id="footerLogo">Asterisk<span>*</span></a>
+        <p class="light">&copy; 2011 Asterisk., All Rights Reserved. Design by <a target="_blank" href="http://www.tomaslach.cz/">Tom&aacute;&scaron; Lach</a>.</p>
+      </div>
+      <div class="col1-4">
+        <h3>About us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+      <div class="col1-4">
+        <h3>Follow us</h3>
+        <p class="followUs clearFix"> <a href="#" class="facebook">Facebook</a> <a href="#" class="twitter">Twitter</a> <a href="#" class="rss">RSS</a> <a href="#" class="linkedin">LinkedIn</a> <a href="#" class="vimeo">Vimeo</a> <a href="#" class="digg">Digg</a> <a href="#" class="delicious">Delicious</a> </p>
+      </div>
+      <div class="col1-4">
+        <h3>Stay udpated</h3>
+        <form action="#" method="post">
+          <fieldset>
+            <input type="text" class="text" value="Your e-mail">
+            <input type="submit" class="submit" value="Subscribe">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
