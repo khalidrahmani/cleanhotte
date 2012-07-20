@@ -1,108 +1,234 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-<title>CleanHotte</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/main.css" media="screen,projection">
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-<body>
-<header>
-  <div class="wrap">
-    <div id="header"> <a id="logo" href="#">CleanHotte</a>
-      <hr>
-      <nav>
-        <ul>
-          <li><a href="#"><strong>Acceuil</strong></a></li>
-          <li><a href="#"><strong>Références</strong></a></li>
-          <li><a href="#"><strong>Produits</strong></a></li>
-          <li><a href="#"><strong>Site Map</strong></a></li>          
-        </ul>
-      </nav>
-    </div>
-    <hr>
-    <div id="intro">
-      <h1>Hi, we are Asterisk!</h1>
-      <h2>Creative agency</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-      <a href="#" class="button"><span>MORE ABOUT US</span></a>
-      <div id="macbook"> <img src="images/screen.png" alt=""></div>
-    </div>
-    <hr>
-    <div id="subIntro">
-      <div class="floatLeft">
-        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h2>
-        <p class="large">Dolore magna aliquam erat volutpat.</p>
-      </div>
-      <a href="#" class="button floatRight"><span>CLICK THIS LINK TO READ MORE</span></a> </div>
-  </div>
-</header>
-<hr>
-<div id="container">
-  <div id="content" class="wrap">
-    <div class="cols marginBottom30 clearFix">
-      <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
-        <div class="content withIcon icon1">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-        </div>
-      </div>
-      <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
-        <div class="content withIcon icon2">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-        </div>
-      </div>
-      <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
-        <div class="content withIcon icon3">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <h2 class="separate">Lorem ipsum dolor</h2>
-    <div class="marginBottom30 clearFix">
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-        <a href="#" class="more">View details</a> </div>
-      <div class="col3-4">
-        <p class="gallery clearFix"> <a class="photo" href="#"><img src="images/image1.png" alt=""></a> <a class="photo" href="#"><img src="images/image2.png" alt=""></a> <a class="photo" href="#"><img src="images/image3.png" alt=""></a> </p>
-      </div>
-    </div>
-    <hr>
-    <h2 class="separate">Recent blog posts</h2>
-    <div class="marginBottom30 clearFix">
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-    </div>    
-  </div>
-</div>
-<hr>
-<div id="twitterBar">
-  <div class="wrap">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="#">http://www.domain.com</a> <small>2 hours ago</small></p>
-  </div>
-</div>
-</body>
+	<head>
+		<title>CleanHotte - Nettoyage et Dégraissage hotte</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css" media="screen,projection">
+		<script src="js/slides.min.jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$('#slides').slides({
+					play : 5000,
+					pause : 2500,
+					hoverPause : true,
+					animationStart : function(current) {
+						$('.caption').animate({
+							bottom : -35
+						}, 100);
+
+					},
+					animationComplete : function(current) {
+						$('.caption').animate({
+							bottom : 0
+						}, 200);
+
+					},
+					slidesLoaded : function() {
+						$('.caption').animate({
+							bottom : 0
+						}, 200);
+					}
+				});
+			});
+
+		</script>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="wrap">
+				<div id="header">
+					<a id="logo" href="#">CleanHotte</a>
+					<hr>
+					<nav>
+						<ul>
+							<li>
+								<a href="#"><strong>Acceuil</strong></a>
+							</li>
+							<li>
+								<a href="#"><strong>Références</strong></a>
+							</li>
+							<li>
+								<a href="#"><strong>Produits</strong></a>
+							</li>
+							<li>
+								<a href="#"><strong>Site Map</strong></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<hr>
+				<div id="intro">
+					<h1>Hi, we are Asterisk!</h1>
+					<h2>Creative agency</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+					</p>
+					<a href="#" class="button"><span>MORE ABOUT US</span></a>
+					<div id="macbook">
+						<div id="slides">
+							<div class="slides_container" >
+								<div class="slides_control" >
+									<div class="slide" >
+										<a target="_blank" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" ><img width="570" height="270" alt="Slide 1" src="images/slide-1.jpg"></a>
+										<div style="bottom: 0px;" class="caption">
+											<p>
+												Happy Bokeh Thursday!
+											</p>
+										</div>
+									</div>
+									<div class="slide" >
+										<a target="_blank" title="Taxi | Flickr - Photo Sharing!" ><img width="570" height="270" alt="Slide 2" src="images/slide-2.jpg"></a>
+										<div class="caption" style="bottom: 0px;">
+											<p>
+												Taxi
+											</p>
+										</div>
+									</div>
+									<div class="slide" >
+										<a target="_blank" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" ><img width="570" height="270" alt="Slide 3" src="images/slide-3.jpg"></a>
+										<div class="caption" style="bottom: 0px;">
+											<p>
+												Happy Bokeh raining Day
+											</p>
+										</div>
+									</div>
+									<div class="slide" >
+										<a target="_blank" title="We Eat Light | Flickr - Photo Sharing!" ><img width="570" height="270" alt="Slide 4" src="images/slide-4.jpg"></a>
+										<div class="caption" style="bottom: 0px;">
+											<p>
+												We Eat Light
+											</p>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<ul class="pagination">
+								<li class="current">
+									<a href="#0">1</a>
+								</li>
+								<li class="">
+									<a href="#1">2</a>
+								</li>
+								<li class="">
+									<a href="#2">3</a>
+								</li>
+								<li class="">
+									<a href="#3">4</a>
+								</li>
+								<li class="">
+									<a href="#4">5</a>
+								</li>
+								<li class="">
+									<a href="#5">6</a>
+								</li>
+								<li class="">
+									<a href="#6">7</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div id="subIntro">
+					<div class="floatLeft">
+						<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h2>
+						<p class="large">
+							Dolore magna aliquam erat volutpat.
+						</p>
+					</div>
+					<a href="#" class="button floatRight"><span>CLICK THIS LINK TO READ MORE</span></a>
+				</div>
+			</div>
+		</header>
+		<hr>
+		<div id="container">
+			<div id="content" class="wrap">
+				<div class="cols marginBottom30 clearFix">
+					<div class="col1-3">
+						<h2 class="separate">Lorem ipsum dolor</h2>
+						<div class="content withIcon icon1">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+							</p>
+						</div>
+					</div>
+					<div class="col1-3">
+						<h2 class="separate">Lorem ipsum dolor</h2>
+						<div class="content withIcon icon2">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+							</p>
+						</div>
+					</div>
+					<div class="col1-3">
+						<h2 class="separate">Lorem ipsum dolor</h2>
+						<div class="content withIcon icon3">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="separate">Lorem ipsum dolor</h2>
+				<div class="marginBottom30 clearFix">
+					<div class="col1-4">
+						<h3>Post title goes here</h3>
+						<small class="date">by admin on Feb 3, 2011</small>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+						</p>
+						<a href="#" class="more">View details</a>
+					</div>
+					<div class="col3-4">
+						<p class="gallery clearFix">
+							<a class="photo" href="#"><img src="images/image1.png" alt=""></a><a class="photo" href="#"><img src="images/image2.png" alt=""></a><a class="photo" href="#"><img src="images/image3.png" alt=""></a>
+						</p>
+					</div>
+				</div>
+				<hr>
+				<h2 class="separate">Recent blog posts</h2>
+				<div class="marginBottom30 clearFix">
+					<div class="col1-4">
+						<h3>Post title goes here</h3>
+						<small class="date">by admin on Feb 3, 2011</small>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+						</p>
+					</div>
+					<div class="col1-4">
+						<h3>Post title goes here</h3>
+						<small class="date">by admin on Feb 3, 2011</small>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+						</p>
+					</div>
+					<div class="col1-4">
+						<h3>Post title goes here</h3>
+						<small class="date">by admin on Feb 3, 2011</small>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+						</p>
+					</div>
+					<div class="col1-4">
+						<h3>Post title goes here</h3>
+						<small class="date">by admin on Feb 3, 2011</small>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="twitterBar">
+			<div class="wrap">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="#">http://www.domain.com</a><small>2 hours ago</small>
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
