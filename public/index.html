@@ -4,7 +4,44 @@
 <title>CleanHotte - Nettoyage et Dégraissage hotte</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/main.css" media="screen,projection">
+<link rel="stylesheet" href="css/slide.css" media="screen,projection">
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 <header>
@@ -13,28 +50,49 @@
       <hr>
       <nav>
         <ul>
-          <li><a href="#"><strong>Acceuil</strong></a></li>
-          <li><a href="#"><strong>Références</strong></a></li>
-          <li><a href="#"><strong>Produits</strong></a></li>
-          <li><a href="#"><strong>Site Map</strong></a></li>          
+          <li><a href="index.html"><strong>Acceuil</strong> </a></li>
+          <li><a href="references.html"><strong>Références</strong> </a></li>
+          <li><a href="#"><strong>sitemap</strong> </a></li>
         </ul>
       </nav>
     </div>
     <hr>
     <div id="intro">
-      <h1>Hi, we are Asterisk!</h1>
-      <h2>Creative agency</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-      <a href="#" class="button"><span>MORE ABOUT US</span></a>
-      <div id="macbook"> <img src="images/screen.png" alt=""></div>
+      <div id="example">
+
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="img/cleanhotte-1.jpeg" width="570" height="270" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+							<p>Protection de l'installation </p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="img/cleanhotte-2.jpeg" width="570" height="270" alt="Slide 2">
+						<div class="caption">
+							<p>Injection de la mousse</p>
+						</div>
+					</div>
+					<div class="slide">
+                      <img src="img/cleanhotte-3.jpeg" width="570" height="270" alt="Slide 3">
+						<div class="caption">
+							<p>Rinçage à la vapeur haute pression</p>
+						</div>
+					</div>	
+					<div class="slide">
+                      <img src="img/cleanhotte-3.jpeg" width="570" height="270" alt="Slide 3">
+						<div class="caption">
+							<p>Finition</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+			<img src="img/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
+		</div>		
+      
     </div>
-    <hr>
-    <div id="subIntro">
-      <div class="floatLeft">
-        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</h2>
-        <p class="large">Dolore magna aliquam erat volutpat.</p>
-      </div>
-      <a href="#" class="button floatRight"><span>CLICK THIS LINK TO READ MORE</span></a> </div>
+    <hr>    
   </div>
 </header>
 <hr>
@@ -42,67 +100,69 @@
   <div id="content" class="wrap">
     <div class="cols marginBottom30 clearFix">
       <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
+        <h2 class="separate">Dégraissage</h2>
         <div class="content withIcon icon1">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+         <ul>
+		     <li>* Nettoyage de hotte de cuisine</li>
+		     <li>* Nettoyage de filtres</li>
+		     <li>* Nettoyage de gaines</li>
+		     <li>* Nettoyage de moteurs d'extraction </li>
+		     <li>* Pose de trappes et tous travaux de pose et de dépose de réseaux</li>
+         </ul>
         </div>
       </div>
       <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
-        <div class="content withIcon icon2">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        <h2 class="separate">Assainissement</h2>
+        <div class="content withIcon icon1">
+           Débouchage de canalisation <br />
+           Nettoyage de fosses <br />
+           Curage <br />
         </div>
       </div>
       <div class="col1-3">
-        <h2 class="separate">Lorem ipsum dolor</h2>
-        <div class="content withIcon icon3">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        <h2 class="separate">VMC</h2>
+        <div class="content withIcon icon1">
+          <p>Les constructions modernes sont équipées de réseaux d'extraction d'air viciés, CleanHotte intervient aussi bien pour des syndics que pour des entreprises ou des particuliers dans l'entretien des moteurs d'extractions souvent situés sur les toits.</p>
         </div>
       </div>
     </div>
     <hr>
-    <h2 class="separate">Lorem ipsum dolor</h2>
+    <h2 class="separate">Moyens d'Intervention </h2>
     <div class="marginBottom30 clearFix">
       <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-        <a href="#" class="more">View details</a> </div>
+        <p>
+	        La société dispose de machines à eau chaude haute pression, de canons mousse et de produits dégraissants conformes aux normes alimentaires des aspirateurs industriels. Des baches plastiques sont utilisées pour la protection et le nettoyage des sites, nos matériels roulants permettent d'acheminer les machines, les fournitures necessaires à l'execution des travaux.         
+        </p>
+        </div>
       <div class="col3-4">
-        <p class="gallery clearFix"> <a class="photo" href="#"><img src="images/image1.png" alt=""></a> <a class="photo" href="#"><img src="images/image2.png" alt=""></a> <a class="photo" href="#"><img src="images/image3.png" alt=""></a> </p>
+        <p class="gallery clearFix"> <img src="img/carsher.jpeg" alt=""> </p>
       </div>
     </div>
     <hr>
-    <h2 class="separate">Recent blog posts</h2>
+    
+        <hr>
+    <h2 class="separate">Nos Produits </h2>
     <div class="marginBottom30 clearFix">
       <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
+        <p>
+            Clean Hotte fournit des filtres de toutes dimensions (durs ou jetables)
+        </p>
+        </div>
+      <div class="col3-4">
+        <p class="gallery clearFix"> <img src="img/filtres.jpg" alt=""> </p>
       </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-      <div class="col1-4">
-        <h3>Post title goes here</h3>
-        <small class="date">by admin on Feb 3, 2011</small>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.</p>
-      </div>
-    </div>    
+    </div>
+    <hr>
   </div>
 </div>
 <hr>
 <div id="twitterBar">
-  <div class="wrap">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a href="#">http://www.domain.com</a> <small>2 hours ago</small></p>
+  <div class="wrap"> 
+    <p>CleanHotte. cleanhotte.com 2012. <br />
+    30, Rue Kamal Mohamed - Tél. 022 99 25 56 - Fax. 022 99 25 55.  - e-mail: clean_hotte@live.fr <br /> 
+       Siège : 848, Route de Lyon 01360 BALAN - Tél. 00334 72 25 02 58 - Fax. 00 334 72 25 04 43 </p>
   </div>
 </div>
+
 </body>
 </html>
