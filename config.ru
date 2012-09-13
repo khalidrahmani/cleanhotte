@@ -9,7 +9,7 @@ run lambda { |env|
       'Content-Type'  => 'text/html', 
       'Cache-Control' => 'public, max-age=10', 
       'Accept-Encoding'=> 'x-compress; x-zip',
-      'Content-Encoding'=> 'gzip'            
+      'Content-Encoding'=> 'x-zip'            
     },
     File.open('public/index.html', File::RDONLY)
   ]
