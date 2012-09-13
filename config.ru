@@ -7,9 +7,11 @@ run lambda { |env|
     200, 
     {
       'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=604800', 
-      'Accept-Encoding'=> 'x-compress; x-zip'      
+      'Cache-Control' => 'public, max-age=10', 
+      'Accept-Encoding'=> 'x-compress; x-zip',
+      'Vary'=> 'Accept-Encoding'      
     },
     File.open('public/index.html', File::RDONLY)
   ]
 }
+#604800
